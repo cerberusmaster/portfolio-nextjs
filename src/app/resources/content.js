@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Robert",
+  lastName: "Lee",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Full Stack Developer",
+  avatar: "/images/avatar2.png",
+  location: "America/Toronto", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Chinese"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -29,7 +29,7 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/cerberusmaster",
   },
   {
     name: "LinkedIn",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:robert19960318@gmail.com",
   },
 ];
 
@@ -52,10 +52,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Software engineer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
+      I'm Robert, a full-stack developer <InlineCode>self-employed</InlineCode>, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -81,7 +81,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
+        {person.firstName} is a full-stack developer with a passion for transforming complex challenges
         into simple, elegant design solutions. Her work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
       </>
@@ -92,17 +92,31 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "GOC - Game On the Chain",
+        timeframe: "07/2023 - 07/2024",
+        role: "Full Stack Developer",
+        website: "https://goc.productions",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed architecture and infrastructure, developed back-end APIs with documents, REST APIs, WebSocket
+            services, and Front-End UI/UX
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed casino roulette game for web and mobile based on React JS, React Toolkit, React query, Tailwind
+            CSS, and Three Js, developed scenes, interactions with animations, Game scenario
+          </>,
+          <>
+            Implement real time user interaction (controlling game objects in web game) from WebGL to Unreal Engine via WebSocket
+          </>,
+          <>
+            Implemented synchronization within Aximmetry Sequencer, so all devices are moving accordingly Streaming
+            on RTMP with HLS, Flowplayer, Wowza, AntMedia/Twitch, AWS Kinesis, keep latency less than 3 seconds
+          </>,
+          <>
+            Collision Detect System with Unreal Engine 5, Eztrack System
+          </>,
+          <>
+            Built payment system with Paypal, Stripe and Cryptocurrency web3 integration.
           </>,
         ],
         images: [
@@ -116,17 +130,59 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Lahoma",
+        timeframe: "01/2022 - 06/2023",
+        website: "https://lahoma.com",
+        role: "React, WebGL, Unreal Engine 5, AWS Serverless Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Designed serverless back-end architecture based on AWS Lambda, S3, DynamoDB, EC2, API gateway,
+            WebSocket, CloudFront, EC2/Unreal Engine 5
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Using Unreal Engine 5, I’ve built WebSocket Server that manages all requests and rendering responses and
+            also composes virtual homes by users’ specific requirements, including colors, size, and positions etc.
+          </>,
+          <>
+            Built web app with React and Three Js that communicating with server and interacting with users
+            Implemented UI interactions to
+              Camera - rotating, moving, zoom in/out
+              Customize Environments - light, skybox, shadow
+              Customize Furnitures - texture, color, resize, movement, rotating
+              Home style - Modern, Classic etc.
+          </>,
+          <>
+            Built AR Model Generator and High VFX Renderer with AI that helps designers to export AR models with
+            several 3D formatted files (gldb, glb, obj, fbx) and High quality rendered images
+          </>,
+          <>
+            Implemented integration between AWS Lambda, S3, EC2, API gateway, WebSocket and Unreal Engine
+            5, 3D Max, Houdini, V-Ray renderer
+          </>,
+          <>
+            Developed 3DMax scripts, Houdini scripts with python that optimize modeler’s activities
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Hothead",
+        timeframe: "01/2018 - 12/2021",
+        website: "https://lahoma.com",
+        role: "Front End Developer",
+        achievements: [
+          <>
+            Developed casual Web Games and Landing pages with Three JS, PhaserJS, and Pixijs
+          </>,
+          <>
+            Build UI/UX with React Native Reanimated, Gesture handler, React Native Paper, Lottie and Framer
+          </>,
+          <>
+            Enhanced app’s performance with implementing React principles with Redux toolkit, React query
+          </>,
+          <>
+            Integrating with Strapi, defined Schema, relations, REST API, UI/UX and developed middleware, router, layouts,
+            pages, and components, assured high performance, optimized functionalities based on Nextjs, React, Bootstrap
           </>,
         ],
         images: [],
@@ -138,12 +194,8 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "ZheJiang University Of Technology",
         description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
       },
     ],
   },
@@ -152,8 +204,8 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "WebGL Development",
+        description: <>Expertise in creating interactive 3D graphics for web applications using WebGL, enhancing user experiences with high-performance rendering.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -171,31 +223,38 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Web Development",
+        description: <>Skilled in building scalable, responsive, and high-performance web applications using modern frameworks and technologies.</>,
+        stack: ["React", "Stripe", ""]
+      },
+      {
+        title: "Mobile App Development",
+        description: <>Experience in developing native and cross-platform mobile applications with an emphasis on performance and user experience.</>,
+        stack: ["React Native", "Flutter", "Android"]
+      },
+      {
+        title: "Clouding Computing Services",
+        description: <>Knowledge of cloud platforms like AWS, Azure, or Google Cloud for scalable app hosting, deployment, and management.</>,
+        stack: ["AWS", "GCP", "Firebase", "Azure"]
+      },
+      {
+        title: "Third-party Platforms",
+        description: <>Ability to integrate and work with external APIs, SDKs, and third-party services to extend app functionality efficiently.</>,
+        stack: ["RevenueCat", "Stripe", ""]
       },
     ],
   },
 };
 
 const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
+  label: "Work",
+  title: "Contribution in projects...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
-const work = {
+const work = { 
   label: "Work",
   title: "My projects",
   description: `Design and dev projects by ${person.name}`,
@@ -210,9 +269,14 @@ const gallery = {
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
+      src: "/images/gallery/ScreenShot Tool -20250211203501.png",
       alt: "image",
-      orientation: "vertical",
+      orientation: "horizontal",
+      title: "Virtual Home Designer",
+      url: "https://web-gl-threejs-virtual-designer.vercel.app",
+      git: "https://github.com/cerberusmaster/Virtual-Designer-UE",
+      company: "lahoma",
+      stack: ["WebGL", "React", "Threejs", "UE5", "Mobx", "WebSocket", "AWS Lambda"]
     },
     {
       src: "/images/gallery/img-02.jpg",

@@ -19,8 +19,9 @@ export function Projects({ range }: ProjectsProps) {
 
   return (
     <Column fillWidth gap="xl" marginBottom="40" paddingX="l">
-      {displayedProjects.map((post, index) => (
-        <ProjectCard
+      {displayedProjects.map((post, index) => {
+        console.log(post)
+        return <ProjectCard
           priority={index < 2}
           key={post.slug}
           href={`work/${post.slug}`}
@@ -31,7 +32,7 @@ export function Projects({ range }: ProjectsProps) {
           avatars={post.metadata.team?.map((member) => ({ src: member.avatar })) || []}
           link={post.metadata.link || ""}
         />
-      ))}
+      })}
     </Column>
   );
 }

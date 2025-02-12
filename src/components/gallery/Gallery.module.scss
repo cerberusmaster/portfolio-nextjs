@@ -12,3 +12,35 @@
 .gridItem {
     margin-bottom: var(--static-space-16);
 }
+
+.card {
+    position: relative;
+    .bottom {
+        bottom: 0px;
+        width: 100%;
+        height: 50px;
+        padding: 0 10px 0px 10px;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #000a;
+        align-items: center;
+        border-end-start-radius: 10px;
+        border-end-end-radius: 10px;
+        .desc {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            .tags {
+                display: flex;
+                flex-direction: row;
+                gap: 3px;
+                span {
+                    font-size: 10px;
+
+                }
+            }
+        }
+    }
+}

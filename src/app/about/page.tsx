@@ -7,6 +7,7 @@ import {
   Icon,
   IconButton,
   SmartImage,
+  SmartLink,
   Tag,
   Text,
 } from "@/once-ui/components";
@@ -138,7 +139,7 @@ export default function About() {
             vertical="center"
             marginBottom="32"
           >
-            {about.calendar.display && (
+            {/* {about.calendar.display && (
               <Flex
                 fitWidth
                 border="brand-alpha-medium"
@@ -162,7 +163,7 @@ export default function About() {
                   icon="chevronRight"
                 />
               </Flex>
-            )}
+            )} */}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>
@@ -178,25 +179,25 @@ export default function About() {
                 {social.map(
                   (item) =>
                     item.link && (
-                        <>
-                            <Button
-                                className="s-flex-hide"
-                                key={item.name}
-                                href={item.link}
-                                prefixIcon={item.icon}
-                                label={item.name}
-                                size="s"
-                                variant="secondary"
-                            />
-                            <IconButton
-                                className="s-flex-show"
-                                size="l"
-                                key={`${item.name}-icon`}
-                                href={item.link}
-                                icon={item.icon}
-                                variant="secondary"
-                            />
-                        </>
+                      <>
+                        <Button
+                          className="s-flex-hide"
+                          key={item.name}
+                          href={item.link}
+                          prefixIcon={item.icon}
+                          label={item.name}
+                          size="s"
+                          variant="secondary"
+                        />
+                        <IconButton
+                          className="s-flex-show"
+                          size="l"
+                          key={`${item.name}-icon`}
+                          href={item.link}
+                          icon={item.icon}
+                          variant="secondary"
+                        />
+                      </>
                     ),
                 )}
               </Flex>
@@ -218,9 +219,15 @@ export default function About() {
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
+                      <SmartLink
+                        // suffixIcon="arrowUpRightFromSquare"
+                        style={{ margin: "0", width: "fit-content", color: 'white' }}
+                        href={experience.website}
+                      >
+                        <Text id={experience.company} variant="heading-strong-l">
+                          {experience.company}
+                        </Text>
+                      </SmartLink>
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
                       </Text>
@@ -239,7 +246,7 @@ export default function About() {
                         </Text>
                       ))}
                     </Column>
-                    {experience.images.length > 0 && (
+                    {/* {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
                         {experience.images.map((image, index) => (
                           <Flex
@@ -264,7 +271,7 @@ export default function About() {
                           </Flex>
                         ))}
                       </Flex>
-                    )}
+                    )} */}
                   </Column>
                 ))}
               </Column>
@@ -304,11 +311,11 @@ export default function About() {
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
+                    <Text variant="heading-default-l">{skill.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
-                    {skill.images && skill.images.length > 0 && (
+                    {/* {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
                         {skill.images.map((image, index) => (
                           <Flex
@@ -333,7 +340,7 @@ export default function About() {
                           </Flex>
                         ))}
                       </Flex>
-                    )}
+                    )} */}
                   </Column>
                 ))}
               </Column>
