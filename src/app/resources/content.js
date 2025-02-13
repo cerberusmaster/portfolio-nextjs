@@ -165,10 +165,10 @@ const about = {
         images: [],
       },
       {
-        company: "Hothead",
-        timeframe: "01/2018 - 12/2021",
-        website: "https://lahoma.com",
-        role: "Front End Developer",
+        company: "Master Anesthesia",
+        timeframe: "01/2022 - 12/2024",
+        website: "https://masteranesthesia.com",
+        role: "Full Stack Developer",
         achievements: [
           <>
             Developed casual Web Games and Landing pages with Three JS, PhaserJS, and Pixijs
@@ -177,7 +177,7 @@ const about = {
             Build UI/UX with React Native Reanimated, Gesture handler, React Native Paper, Lottie and Framer
           </>,
           <>
-            Enhanced app’s performance with implementing React principles with Redux toolkit, React query
+            Enhanced app's performance with implementing React principles with Redux toolkit, React query
           </>,
           <>
             Integrating with Strapi, defined Schema, relations, REST API, UI/UX and developed middleware, router, layouts,
@@ -203,29 +203,14 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "WebGL Development",
-        description: <>Expertise in creating interactive 3D graphics for web applications using WebGL, enhancing user experiences with high-performance rendering.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-        stack: ["Threejs", "Unity3D", "Cocos2d", "Unreal Engine", "3Ds Max", "3DS Maya"]
-      },
-      {
         title: "Web & Mobile app Development",
         description: <>Skilled in building scalable, responsive, and high-performance web applications using modern frameworks and technologies.</>,
         stack: ["React", "Vue", "React Native", "Expo", "iOS", "Android"]
+      },
+      {
+        title: "WebGL Development",
+        description: <>Expertise in creating interactive 3D graphics for web applications using WebGL, enhancing user experiences with high-performance rendering.</>,
+        stack: ["Threejs", "Unity3D", "Cocos2d", "Unreal Engine", "3Ds Max", "3DS Maya"]
       },
       {
         title: "Clouding Computing Services & Third-party platforms",
@@ -272,66 +257,21 @@ const gallery = {
       src: "/images/gallery/img-02.jpg",
       alt: "image",
       orientation: "horizontal",
+      title: "Slot Machine",
+      url: "https://web-gl-threejs-virtual-designer.vercel.app",
+      git: "https://github.com/cerberusmaster/Virtual-Designer-UE",
+      company: "lahoma",
+      stack: ["Pixijs", "Spine", "TypeScript", "CSS"]
     },
     {
       src: "/images/gallery/img-03.jpg",
       alt: "image",
       orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      title: "Slot Machine",
+      url: "https://web-gl-threejs-virtual-designer.vercel.app",
+      git: "https://github.com/cerberusmaster/Virtual-Designer-UE",
+      company: "lahoma",
+      stack: ["Pixijs", "Spine", "TypeScript", "CSS"]
     },
   ],
 };
