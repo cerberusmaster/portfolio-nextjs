@@ -41,14 +41,18 @@ export default function MasonryGrid() {
             className={styles.gridItem}
           />
           <div className={styles.bottom}>
-            <div className={styles.desc}>
+            <div className={styles.desc} style={{
+              flex: 9,
+            }}>
               <a
                 href={image.url}
                 target="_blank"
               >
                 {image.title}
               </a>
-              <div className={styles.tags}>
+              <div className={styles.tags} style={{
+                flexWrap: 'wrap',
+              }}>
                 {
                   image.stack?.map((s, i) => (<span key={i}>{s}</span>))
                 }
@@ -56,23 +60,19 @@ export default function MasonryGrid() {
             </div>
             <Flex
               gap="24"
+              flex={3}
+              style={{
+                justifyContent: 'end'
+              }}
             >
-              <IconButton
-                key={"name"}
-                href={image.git}
-                icon={"apple"}
-                tooltip={image.git}
-                size="s"
-                variant="ghost"
-              />
-              <IconButton
+              {image.git && <IconButton
                 key={"name"}
                 href={image.git}
                 icon={"github"}
                 tooltip={image.git}
                 size="s"
                 variant="ghost"
-              />
+              />}
             </Flex>
           </div>
         </div>

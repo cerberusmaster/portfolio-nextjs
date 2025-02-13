@@ -258,20 +258,17 @@ const gallery = {
       alt: "image",
       orientation: "horizontal",
       title: "Slot Machine",
-      url: "https://web-gl-threejs-virtual-designer.vercel.app",
-      git: "https://github.com/cerberusmaster/Virtual-Designer-UE",
-      company: "lahoma",
+      url: "#",
       stack: ["Pixijs", "Spine", "TypeScript", "CSS"]
     },
     {
       src: "/images/gallery/img-03.jpg",
       alt: "image",
       orientation: "vertical",
-      title: "Slot Machine",
-      url: "https://web-gl-threejs-virtual-designer.vercel.app",
-      git: "https://github.com/cerberusmaster/Virtual-Designer-UE",
+      title: "...",
+      url: "#",
       company: "lahoma",
-      stack: ["Pixijs", "Spine", "TypeScript", "CSS"]
+      stack: []
     },
   ],
 };
