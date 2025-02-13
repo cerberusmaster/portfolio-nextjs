@@ -1,0 +1,50 @@
+---
+title: "GOC - Game On the Chain"
+publishedAt: "2025-01-08"
+image: "/images/projects/goc/Roulettees_2000_2.jpg"
+summary: "Every career is a journey, filled with challenges, growth, and those significant moments that mark a shift in our path."
+tag: "Gambling"
+---
+
+
+## About 
+
+[GOC](https://gameonthechain.com/) provides AR based live casino game running in virtual studio\
+
+When we are at the beginning, we don't have any experience and even exact plan how to build AR based gambling apps. We did research, brainstorm, consult with experts, learn from communities, at last we built our products based on our very own infrastructure. I'm excited to share things that I've achieved in GOC
+
+![](/images/projects/goc/developers.jpg)
+
+## Infrastructure
+
+* Virtual Studio - Roulette, [Robotic](https://fair-documentation.readthedocs.io/en/latest/CobotsManual/intro.html), Slider, WebCam, WLED, PTZ Camera
+* Livestream - AWS Kinesis, [Wowza](https://www.wowza.com/docs/tune-wowza-streaming-engine-for-optimal-performance), [FlowPlayer](https://flowplayer.com/), **WebRTC**
+* WebGL - Unreal Engine5, [Aximmetry](https://aximmetry.com/), Threejs
+* Web & Mobile App - Reactjs, React Native
+* Back-End - Nodejs, python based controllers interacts with devices
+* Database - MongoDB
+
+![](/images/projects/goc/diagram2.png)
+
+## AR based live streaming
+
+* Implemented **webrtc** and reduced latency less than 1~2 seconds. Optimized streaming and proper resolution
+* Aximmetry (manipulate green screen with Unreal Engine), Environments, level management, etc
+* Building plugins with C++ and Blueprint interacts with back-end APIs and GOC machines
+
+## Web App
+
+* I've built [Web App](https://roulette-frontend.onrender.com/) based on React, React context, hook, react toolkit, react query, and mobx etc
+* Implemented user management with firebase authentication, live streaming with FlowPlayer. API Integration with react query
+
+![](/images/projects/goc/web-app.PNG)
+
+## Back-End
+
+* REST APIs, documentation, build database with schema and tables
+* Database to organize statistic, game room, user management, betting results
+* Payment integration with **Web3**, **Stripe**, **Paypal**
+
+## Latest
+
+We are working on enhancing virtual environments, ready to launch web app and mobile app

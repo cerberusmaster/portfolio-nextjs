@@ -10,7 +10,6 @@ tag: "WebGL"
 
 [Virtual Home Designer](https://web-gl-threejs-virtual-designer.vercel.app/) was kind of assitant application that helps people to design their home with digital assets, comes from furniture products. People were able to choose several styles of elements in a room - including floors, room styles (modern, classic, nature, industrial for example), and furnitures their products ( sofas, armchari, charis, fllor lamps, carpets, coffee tables, dinning tables etc)
 
-(optional) Standard Mode, Expert Mode
 Literally provides more specified features and functions let people do design more details and customizable.
 
 After that they're Looking around inner rooms, moving furnitures, spawn furnitures, clone furnitures, chaing styles, colors sizes, rotation of each furnitures what they prefer.
@@ -25,13 +24,11 @@ Once people confirm their design plan, all information/data automatically sent t
 
 ## AWS Lambda functions
 
-- turn on/off unreal engine - so running only CET time zone
-- websocket receive render request from webapp
-- managing render tasks within queue
-- trigger renering to unreal engine, store renered images to s3 bucket and reply urls to webapp.
-- API Gateway,
-- DynamoDB, S3 bucket to store
-digital assets are stroed to S3 bucket.rooms, environments, furnitures,
+- Turn on/off unreal engine - so running only CET time zone
+- Websocket receive render request from webapp
+- Managing render tasks within queue
+- Trigger renering to unreal engine, store renered images to s3 bucket and reply urls to webapp.
+- API Gateway, DynamoDB, S3 bucket to store digital assets
 
 ## Web App
 
@@ -47,11 +44,7 @@ I studied event processing deeply and updated algorithm to manage it.
 
 ## Unreal Engine
 
-I worked with C++, Blueprint, all 3d digital assets are provided from design team.
+I worked on C++, Blueprint, all 3D assets are provided from design team.
 There were many transforming operations including spawning furniture, cloning furniture, hide and show furnitures, rotating, resize, move products etc
 One challenge was optimizing rendering tasks, sometimes it's exceeded over 50.
 I had to create several levels and rendered in parallel.
-
-## Final Thoughts
-
-The final product is just the tip of the iceberg—the visible 1%. The other 99% may never see the spotlight, but they are just as important. They represent the trial and error, the persistence, and the creative drive that push us to find the best solution. So next time you’re stuck or looking for inspiration, don’t be afraid to dig into the drawer. The answer might be hiding there, waiting for the right moment to shine.
