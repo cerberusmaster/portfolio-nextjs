@@ -55,7 +55,7 @@ const home = {
   headline: <>Software engineer</>,
   subline: (
     <>
-      Welcome to my digital space. I'm a passionate software engineer dedicated to transforming complex challenges into elegant, efficient solutions. With expertise in modern programming languages and a commitment to continuous learning, I thrive on building scalable applications that make a real impact. Explore my portfolio to see how creativity meets code in every project
+      Welcome to my digital space. I'm a passionate software engineer dedicated to transforming complex challenges into elegant, efficient solutions. With expertise in modern programming languages and a commitment to continuous learning, I thrive on building scalable applications that make a real impact.
     </>
   ),
 };
