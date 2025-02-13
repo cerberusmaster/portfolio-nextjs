@@ -14,6 +14,7 @@ interface CarouselProps extends React.ComponentProps<typeof Flex> {
   aspectRatio?: string;
   sizes?: string;
   revealedByDefault?: boolean;
+  onNext: Function
 }
 
 const Carousel: React.FC<CarouselProps> = ({
@@ -21,6 +22,7 @@ const Carousel: React.FC<CarouselProps> = ({
   indicator = "line",
   aspectRatio = "16 / 9",
   sizes,
+  onNext,
   revealedByDefault = false,
   ...rest
 }) => {
@@ -51,6 +53,7 @@ const Carousel: React.FC<CarouselProps> = ({
       setIsTransitioning(false);
 
       transitionTimeoutRef.current = setTimeout(() => {
+        onNext(nextIndex);
         setActiveIndex(nextIndex);
 
         setTimeout(() => {

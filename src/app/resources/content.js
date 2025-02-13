@@ -55,8 +55,7 @@ const home = {
   headline: <>Software engineer</>,
   subline: (
     <>
-      I'm Robert, a full-stack developer <InlineCode>self-employed</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Welcome to my digital space. I'm a passionate software engineer dedicated to transforming complex challenges into elegant, efficient solutions. With expertise in modern programming languages and a commitment to continuous learning, I thrive on building scalable applications that make a real impact. Explore my portfolio to see how creativity meets code in every project
     </>
   ),
 };
@@ -221,26 +220,17 @@ const about = {
             height: 9,
           },
         ],
+        stack: ["Threejs", "Unity3D", "Cocos2d", "Unreal Engine", "3Ds Max", "3DS Maya"]
       },
       {
-        title: "Web Development",
+        title: "Web & Mobile app Development",
         description: <>Skilled in building scalable, responsive, and high-performance web applications using modern frameworks and technologies.</>,
-        stack: ["React", "Stripe", ""]
+        stack: ["React", "Vue", "React Native", "Expo", "iOS", "Android"]
       },
       {
-        title: "Mobile App Development",
-        description: <>Experience in developing native and cross-platform mobile applications with an emphasis on performance and user experience.</>,
-        stack: ["React Native", "Flutter", "Android"]
-      },
-      {
-        title: "Clouding Computing Services",
+        title: "Clouding Computing Services & Third-party platforms",
         description: <>Knowledge of cloud platforms like AWS, Azure, or Google Cloud for scalable app hosting, deployment, and management.</>,
-        stack: ["AWS", "GCP", "Firebase", "Azure"]
-      },
-      {
-        title: "Third-party Platforms",
-        description: <>Ability to integrate and work with external APIs, SDKs, and third-party services to extend app functionality efficiently.</>,
-        stack: ["RevenueCat", "Stripe", ""]
+        stack: ["AWS", "GCP", "Firebase", "Azure", "RevenueCat", "Stripe"]
       },
     ],
   },

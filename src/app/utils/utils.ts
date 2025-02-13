@@ -9,12 +9,17 @@ type Team = {
   linkedIn: string;
 };
 
+interface Image {
+  src: string,
+  desc: string
+}
+
 type Metadata = {
   title: string;
   publishedAt: string;
   summary: string;
   image?: string;
-  images: string[];
+  images: Image[];
   tag?: string;
   team: Team[];
   link?: string;

@@ -315,32 +315,22 @@ export default function About() {
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
-                    {/* {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )} */}
+                    <Flex fillWidth paddingTop="m" gap="12">
+                      {
+                        skill.stack?.map((s) => {
+                          return <div style={{
+                            backgroundColor: '#5555',
+                            borderRadius: 12,
+                            paddingLeft: 8,
+                            paddingRight: 8,
+                            paddingTop: 2,
+                            paddingBottom: 2,
+                            fontSize: 12,
+                            color: '#ccc'
+                          }}>{s}</div>
+                        })
+                      }
+                    </Flex>
                   </Column>
                 ))}
               </Column>
