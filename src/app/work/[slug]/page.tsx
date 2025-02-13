@@ -111,7 +111,7 @@ export default function Project({ params }: WorkParams) {
           aspectRatio="16 / 9"
           radius="m"
           alt="image"
-          src={post.metadata.images[0]}
+          src={post.metadata.images[0].src}
         />
       )}
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
