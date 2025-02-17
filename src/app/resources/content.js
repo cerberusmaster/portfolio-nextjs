@@ -101,8 +101,8 @@ const about = {
             services, and Front-End UI/UX
           </>,
           <>
-            Developed casino roulette game for web and mobile based on React JS, React Toolkit, React query, Tailwind
-            CSS, and Three Js, developed scenes, interactions with animations, Game scenario
+            Developed casino roulette game for web and mobile based on React, React Native, React Toolkit, React query, Tailwind
+            CSS, and ThreeJs, developed scenes, interactions with animations, Game scenario
           </>,
           <>
             Implement real time user interaction (controlling game objects in web game) from WebGL to Unreal Engine via WebSocket
@@ -129,10 +129,35 @@ const about = {
         ],
       },
       {
+        company: "Master Anesthesia",
+        timeframe: "01/2022 - 12/2024",
+        website: "https://masteranesthesia.com",
+        role: "Full Stack Developer",
+        achievements: [
+          <>
+          Optimized interaction with firebase firestore and realtimedb and speed up loading contents from 15min in a few seconds
+Implemented firebase authentication with social providers email/password, google, apple, facebook and anonymous
+Enhanced code quality by transfering javascript to typescript and adding test codes
+            Developed casual Web Games and Landing pages with Three JS, PhaserJS, and Pixijs
+          </>,
+          <>
+            Build UI/UX with React Native Reanimated, Gesture handler, React Native Paper, Lottie and Framer
+          </>,
+          <>
+            Enhanced app's performance with implementing React principles with Redux toolkit, React query
+          </>,
+          <>
+            Integrating with Strapi, defined Schema, relations, REST API, UI/UX and developed middleware, router, layouts,
+            pages, and components, assured high performance, optimized functionalities based on Nextjs, React, Bootstrap
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Lahoma",
         timeframe: "01/2022 - 06/2023",
         website: "https://lahoma.com",
-        role: "React, WebGL, Unreal Engine 5, AWS Serverless Developer",
+        role: "Full Stack Developer",
         achievements: [
           <>
             Designed serverless back-end architecture based on AWS Lambda, S3, DynamoDB, EC2, API gateway,
@@ -160,28 +185,6 @@ const about = {
           </>,
           <>
             Developed 3DMax scripts, Houdini scripts with python that optimize modeler’s activities
-          </>,
-        ],
-        images: [],
-      },
-      {
-        company: "Master Anesthesia",
-        timeframe: "01/2022 - 12/2024",
-        website: "https://masteranesthesia.com",
-        role: "Full Stack Developer",
-        achievements: [
-          <>
-            Developed casual Web Games and Landing pages with Three JS, PhaserJS, and Pixijs
-          </>,
-          <>
-            Build UI/UX with React Native Reanimated, Gesture handler, React Native Paper, Lottie and Framer
-          </>,
-          <>
-            Enhanced app's performance with implementing React principles with Redux toolkit, React query
-          </>,
-          <>
-            Integrating with Strapi, defined Schema, relations, REST API, UI/UX and developed middleware, router, layouts,
-            pages, and components, assured high performance, optimized functionalities based on Nextjs, React, Bootstrap
           </>,
         ],
         images: [],

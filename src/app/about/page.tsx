@@ -15,6 +15,7 @@ import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
+import ReactBadge from "@/components/about/ReactBadge";
 
 export async function generateMetadata() {
   const title = about.title;
@@ -336,6 +337,12 @@ export default function About() {
               </Column>
             </>
           )}
+
+          <Flex center paddingTop="m" marginTop="m">
+            <SmartLink href="https://www.hackerrank.com/profile/robert0318" unstyled>
+              <ReactBadge />
+            </SmartLink>
+          </Flex>
         </Column>
       </Flex>
     </Column>
