@@ -189,6 +189,36 @@ Enhanced code quality by transfering javascript to typescript and adding test co
         ],
         images: [],
       },
+      {
+        company: "Winking Studios",
+        timeframe: "02/2018 - 10/2022",
+        website: "https://www.winkingworks.com/",
+        role: "Game Developer",
+        achievements: [
+<>
+Unity3D: Skilled in creating games and interactive applications using Unity's robust toolset. I have worked with Unity's powerful scripting API to implement gameplay mechanics, AI, animation systems, and physics.
+</>,
+<>
+Unreal Engine: Proficient in utilizing Unreal Engine's advanced features such as the Blueprint Visual Scripting system, C++, and the engine’s high-end rendering capabilities. I’ve created visually stunning and performance-optimized games and simulations, leveraging Unreal's advanced material editor, particle system, and cinematic tools.
+</>,
+<>
+WebGL & Three.js: Expertise in developing interactive 3D applications and games for the web, using WebGL for rendering and Three.js for JavaScript-based 3D graphics. I have crafted browser-based games and interactive content that function across various browsers with an emphasis on performance, cross-platform compatibility, and immersive user experiences.
+</>,
+<>
+Key Responsibilities:
+<br/>
+<ul>Game Design and Development:</ul> Conceptualized, prototyped, and implemented gameplay mechanics, character systems, AI behaviors, and interactive 3D environments.
+<br/>
+<ul>Cross-Platform Deployment:</ul> Delivered games for a range of platforms, from desktop to mobile and web-based applications, ensuring smooth performance and consistent user experiences.
+<br/>
+<ul>Graphics & Visuals:</ul> Leveraged the powerful rendering capabilities of Unity3D, Unreal Engine, WebGL, and Three.js to create high-quality visuals, from realistic 3D environments to stylized graphics that match the vision of the game.
+<br/>
+<ul>Optimization & Performance:</ul> Ensured optimal performance across devices by profiling and optimizing assets, code, and scene rendering, particularly important for mobile and web platforms where resource constraints are more prominent.
+
+</>,
+        ],
+        images: [],
+      },
     ],
   },
   studies: {

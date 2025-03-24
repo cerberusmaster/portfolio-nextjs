@@ -1,0 +1,37 @@
+---
+title: "Winking - Motor Race"
+publishedAt: "2019-10-09"
+image: "/images/projects/winking/a8db82d5846fpic.jpg"
+summary: "As design engineers, we're often defined by the 1% of our work that makes it into the final product."
+tag: "Game"
+---
+
+## About
+
+Moto Racer 4 is an adrenaline-pumping racing game that offers both single-player and multiplayer modes, including a co-op experience for up to 10 players. Players can choose from a variety of daring riders and bikes, mastering techniques like drifts, wheelies, and swerves. The game features thrilling asphalt and off-road racing modes across diverse environments, including deserts and the Himalayas.
+
+## 3Ds Maya
+
+Modeling: Sculpting the basic shapes of vehicles, characters, and environments. Bikes and characters are highly detailed to ensure they look appealing in the game world.
+
+Texturing and UV Mapping: After the models are created, textures are applied to them. UV mapping is done to ensure that textures like skins, decals, and materials (metal, rubber, etc.) are wrapped correctly around models.
+
+Rigging: For character animations (like riders on bikes), rigging is done in Maya to define the bone structure of the characters. This allows for realistic animations during gameplay.
+
+Animation: Using Maya’s animation tools, developers create various animations for the motorcycles (e.g., idle, movement, acceleration, jumping, crashes) and riders (e.g., steering, leaning, reactions). These animations are exported to Unity as assets.
+
+Environment Design: The track environments are designed in Maya, taking into consideration various terrains like highways, off-road sections, obstacles, jumps, and scenery elements. The assets are then imported into Unity for integration.
+
+## Unity3D
+
+Scene Setup and Level Design: Unity3D is used to import the assets created in Maya. Track layouts are created, including defining race paths, checkpoints, obstacles, and special environmental features like ramps, sharp turns, or weather effects. Unity’s terrain tools can be used to craft natural landscapes for off-road sections.
+
+Vehicle Physics and Movement: The development team uses Unity’s physics engine to create realistic motorcycle movement. This involves:
+
+Vehicle Controller: A custom vehicle controller script is written in C# to handle motorcycle physics, including acceleration, braking, steering, and suspension. Rigidbody components are used for realistic collision detection and to simulate movement physics like traction and gravity.
+
+Handling and Input: Unity input systems allow players to control the bikes, whether using a keyboard, gamepad, or other controllers. The handling model includes features like leaning, boosting, and drifting.
+
+AI and Opponent Behavior: AI racers are implemented using Unity’s NavMesh system or custom pathfinding techniques. These AI opponents need to follow the track, handle collisions, react to player moves, and provide a competitive challenge. Advanced AI algorithms are used to make the race more dynamic.
+
+Multiplayer Implementation: Unity’s networking features or a third-party library like Photon Unity Networking (PUN) are used for multiplayer mode. Multiplayer features, including player synchronization, race start, and real-time interaction (like passing opponents or collisions), are implemented.
