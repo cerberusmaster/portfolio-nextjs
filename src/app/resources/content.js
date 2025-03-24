@@ -286,23 +286,6 @@ const gallery = {
       company: "lahoma",
       stack: ["WebGL", "React", "Threejs", "UE5", "Mobx", "WebSocket", "AWS Lambda"]
     },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-      title: "Slot Machine",
-      url: "#",
-      stack: ["Pixijs", "Spine", "TypeScript", "CSS"]
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-      title: "...",
-      url: "#",
-      company: "lahoma",
-      stack: []
-    },
   ],
 };
 
